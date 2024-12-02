@@ -173,7 +173,7 @@ def get_median_sale_prices(path):
 
     p = kk.get('dataCache').get('/stingray/api/graph/6/30818/All/regional-housing-market/home_prices').get('res').get('text').split('{}&&')[1]
     ll = json.loads(p)
-    q = ll.get('payload').get('metrics')[0]
+    qa = ll.get('payload').get('metrics')[0]
     return q
 
 
